@@ -21,9 +21,9 @@ hist(rpois(n,l),
 
 #dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
 
+#
 
-
-# Nilai Rataan (??) dan Varian (??�) dari Distribusi Poisson.
+# Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.
 
 l=mu=sigma
 mu
