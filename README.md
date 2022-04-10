@@ -46,7 +46,8 @@ Contoh :
 C.	Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
 
 Harap dikerjakan secara jujur sesuai dengan kemampuan masing-masing. Selamat Mengerjakan ! 
-Jawaban
+
+#Jawaban
 1.	
 A.	Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi ? (distribusi Geometrik)
  
