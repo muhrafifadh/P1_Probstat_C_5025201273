@@ -9,7 +9,7 @@ dgeom(x-1,p)
 
 #mean Distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribusi
 #geometrik acak tersebut X = 3 ( distribusi geometrik acak () == 3 )
-
+set.seed (3)
 
 mean(rgeom(n = 10000,p)==3)
 
@@ -20,14 +20,14 @@ mean(rgeom(n = 10000,p)==3)
 #Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
 
 set.seed(0)
-hist(rgeom(x,size,prob),
+hist(rgeom(x,p),
      main="Histogram Binomial Sembuh Covid",
      xlab="x",
-     xlim = c(0,20),
+     xlim = c(0,5),
      col="darkmagenta",
 )
 
-#Nilai Rataan (??) dan Varian (??�) dari Distribusi Geometrik.
+#Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
 
 mu=(1/prob)
 mu
