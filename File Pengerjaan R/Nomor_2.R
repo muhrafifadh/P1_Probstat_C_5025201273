@@ -2,40 +2,34 @@
 
 #Peluang terdapat 4 pasien yang sembuh.
 #124,032
-x <- 0:4
+x <- 4
 size <- 20
-prob <- 0.2
-p <- dbinom(x,size,prob)
+p <- 0.2
+dbinom(x,size,p)
 
 #Gambarkan grafik histogram berdasarkan kasus tersebut.
 
-x <- 0:20
-plot(x,dbinom(x,size,prob),
-     type='h',
-     main='Binomial Distribution (n=20, p=0.2)',
-     ylab='Probability',
-     xlab ='# Successes',
-     lwd=3)
+set.seed(0)
+hist(rbinom(x,size,p),
+     main="Histogram Binomial Sembuh Covid",
+     xlab="x",
+     xlim = c(0,7),
+     ylab="Frekuensi",
+     col="darkmagenta",
+)
 
-#Nilai Rataan (??) dan Varian (??�) dari DistribusiBinomial.
+#Nilai Rataan (μ) dan Varian (σ²) dari DistribusiBinomial.
 
+q = 1-p
+q
 
-data=cbind(x,p,x*p,x^2*p)
-data
-
-rownames(data)=0:4
-colnames(data)=c("x","p","xp","x^2p")
-data
-
-addmargins(data,1)
-
-mu=sum(x*p)
+mu=x*prob
 mu
 
-sigma.sq=sum(x^2*p)-mu^2
+sigma.sq=x*p*q
 sigma.sq
 
-sigma=sqrt(sigma.sq)
+sigma=sqrt(x*p*q)
 sigma
 
 #https://mse.redwoods.edu/darnold/math15/spring2013/R/Activities/MeanVarStd.html
