@@ -11,7 +11,7 @@ hist(rchisq(n,l),
      xlim = c(0,20),
      col="darkmagenta",
 )
-#Nilai Rataan (??) dan Varian (??�) dari DistribusiChi-Square.
+#Nilai Rataan (μ) dan Varian (σ²) dari DistribusiChi-Square.
 mu = v
 mu
 
